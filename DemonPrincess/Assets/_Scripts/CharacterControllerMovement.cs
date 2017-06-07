@@ -42,7 +42,7 @@ public class CharacterControllerMovement : MonoBehaviour {
             //Debug.Log((moveTarget * moveSpeed * Time.deltaTime).ToString() + " Stuff");
             anim.SetFloat("Forward", floFinalMove.z);
             anim.SetFloat("Turn", floFinalMove.x);
-            character.AddForce(floFinalMove, ForceMode.Impulse); //adding force based on target position
+            //character.AddForce(floFinalMove, ForceMode.Impulse); //adding force based on target position
         }
         if (moveX == 0 && moveZ == 0)
         {
@@ -54,7 +54,7 @@ public class CharacterControllerMovement : MonoBehaviour {
     {
         RaycastHit hit;
         Ray groundCheck = new Ray(transform.position, (Vector3.down * 0.1f));
-        if (Physics.Raycast(groundCheck, out hit, 1.2f) == true)
+        if (Physics.Raycast(groundCheck, out hit, .2f) == true)
         {
             //Debug.Log("grounded");
             isGrounded = true;
@@ -67,9 +67,11 @@ public class CharacterControllerMovement : MonoBehaviour {
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            Debug.Log("Jump");
-            character.AddRelativeForce(0, jumpForce, 0, ForceMode.VelocityChange);
+            anim.SetBool("OnGround", false);
+            //character.AddRelativeForce(0, jumpForce, 0, ForceMode.VelocityChange);
         }
+        else
+            anim.SetBool("OnGround", true);
 
     }
 }
