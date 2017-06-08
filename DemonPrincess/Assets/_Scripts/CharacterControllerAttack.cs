@@ -7,6 +7,8 @@ public class CharacterControllerAttack : MonoBehaviour {
     Animator charAnim;
     public AnimationClip attackAnim;
 
+    public bool isAttacking = false;
+
     void Start()
     {
         charAnim = GetComponent<Animator>();
@@ -24,7 +26,9 @@ public class CharacterControllerAttack : MonoBehaviour {
     IEnumerator Attack()
     {
         charAnim.SetBool("Attack", true);
+        isAttacking = true;
         yield return new WaitForSeconds(attackAnim.length);
         charAnim.SetBool("Attack", false);
+        isAttacking = false;
     }
 }

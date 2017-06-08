@@ -20,10 +20,14 @@ public class CameraControllerMovement : MonoBehaviour {
     {
         transform.position = new Vector3(sceneCharacter.transform.position.x, yPos, sceneCharacter.transform.position.z);
 
-        if (Input.GetMouseButton(1) == true) //if right click is held, the camera can rotate, otherwise it can't
-        {
-            transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * rotateSpeed * Time.deltaTime, Space.Self);
-        }
+        
+            //transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * rotateSpeed * Time.deltaTime, Space.Self);
+            if (Input.mousePosition.x > Screen.width * .95)
+                transform.Rotate(new Vector3(0, 1, 0) * rotateSpeed * Time.deltaTime, Space.Self);
+            if (Input.mousePosition.x < Screen.width * .05)
+                transform.Rotate(new Vector3(0, -1, 0) * rotateSpeed * Time.deltaTime, Space.Self);
+
+        
 
 
     }
