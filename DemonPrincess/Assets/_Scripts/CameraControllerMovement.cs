@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class CameraControllerMovement : MonoBehaviour {
 
-    public Transform sceneCharacter;
+    Transform sceneCharacter;
 
-    bool canRotateCamera = false;
 
     float yPos;
     
@@ -14,6 +13,7 @@ public class CameraControllerMovement : MonoBehaviour {
 
     void Start()
     {
+        sceneCharacter = GameObject.FindGameObjectWithTag("Controller").transform;
         yPos = transform.position.y;
     }
     void Update()
@@ -22,18 +22,9 @@ public class CameraControllerMovement : MonoBehaviour {
 
         if (Input.GetMouseButton(1) == true) //if right click is held, the camera can rotate, otherwise it can't
         {
-            canRotateCamera = true;
+            transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X"), 0) * rotateSpeed * Time.deltaTime, Space.Self);
         }
-        else
-            canRotateCamera = false;
 
-        if(Input.GetAxis("Mouse X") > 0 && canRotateCamera)
-        {
-            transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime, Space.Self);
-        }
-        if(Input.GetAxis("Mouse X") < 0 && canRotateCamera)
-        {
-            transform.Rotate(Vector3.down * rotateSpeed * Time.deltaTime, Space.Self);
-        }
+
     }
 }
