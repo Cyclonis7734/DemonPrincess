@@ -6,6 +6,10 @@ public class CharacterControllerAttack : MonoBehaviour {
 
     Animator charAnim;
     public AnimationClip attackAnim;
+    public GameObject demonBall;
+    public GameObject instantiatePosition;
+
+    public bool isAttacking = false;
 
     void Start()
     {
@@ -14,7 +18,7 @@ public class CharacterControllerAttack : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetButtonDown("Attack") && GetComponent<CharacterControllerDemonForm>().demonForm)
+        if (Input.GetButtonDown("Attack") && GetComponent<CharacterControllerDemonForm>().demonForm && !isAttacking)
         {
             StartCoroutine(Attack());
         }
@@ -24,7 +28,16 @@ public class CharacterControllerAttack : MonoBehaviour {
     IEnumerator Attack()
     {
         charAnim.SetBool("Attack", true);
-        yield return new WaitForSeconds(attackAnim.length);
+        isAttacking = true;
+        yield return new WaitForSeconds(attackAnim.length / 2);
+        Kamehameha();
+        yield return new WaitForSeconds(attackAnim.length / 2);
         charAnim.SetBool("Attack", false);
+        isAttacking = false;
+    }
+
+    public void Kamehameha()
+    {
+        Instantiate(demonBall, instantiatePosition.transform.position, Quaternion.identity);
     }
 }
