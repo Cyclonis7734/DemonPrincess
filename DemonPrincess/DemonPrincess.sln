@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemonPrincess.Plugins", "DemonPrincess.Plugins.csproj", "{C79B9BDA-5750-CC4C-6D0E-83EA41D9A335}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemonPrincess", "DemonPrincess.csproj", "{83F5EFB0-3AE3-2754-C4D3-4AF1F391ADF4}"
