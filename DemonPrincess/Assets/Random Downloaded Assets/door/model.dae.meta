@@ -1,0 +1,805 @@
+fileFormatVersion: 2
+guid: 2702bc1a06ac12b4d88e181027499075
+timeCreated: 1491438525
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: door__good__square
+    100002: door__square
+    100004: door_frame__square
+    100006: door_frame__square 1
+    100008: door_knob
+    100010: door_knob 1
+    100012: door_strapping
+    100014: door_strapping 1
+    100016: door_strapping 2
+    100018: door_strapping 3
+    100020: door_strapping 4
+    100022: door_strapping 5
+    100024: doorway__square_1_
+    100026: frame_tile
+    100028: frame_tile 1
+    100030: frame_tile 10
+    100032: frame_tile 11
+    100034: frame_tile 12
+    100036: frame_tile 13
+    100038: frame_tile 14
+    100040: frame_tile 15
+    100042: frame_tile 16
+    100044: frame_tile 17
+    100046: frame_tile 18
+    100048: frame_tile 19
+    100050: frame_tile 2
+    100052: frame_tile 20
+    100054: frame_tile 21
+    100056: frame_tile 22
+    100058: frame_tile 23
+    100060: frame_tile 24
+    100062: frame_tile 25
+    100064: frame_tile 26
+    100066: frame_tile 27
+    100068: frame_tile 28
+    100070: frame_tile 29
+    100072: frame_tile 3
+    100074: frame_tile 30
+    100076: frame_tile 31
+    100078: frame_tile 32
+    100080: frame_tile 33
+    100082: frame_tile 34
+    100084: frame_tile 35
+    100086: frame_tile 36
+    100088: frame_tile 37
+    100090: frame_tile 38
+    100092: frame_tile 39
+    100094: frame_tile 4
+    100096: frame_tile 40
+    100098: frame_tile 41
+    100100: frame_tile 42
+    100102: frame_tile 43
+    100104: frame_tile 44
+    100106: frame_tile 45
+    100108: frame_tile 46
+    100110: frame_tile 47
+    100112: frame_tile 48
+    100114: frame_tile 49
+    100116: frame_tile 5
+    100118: frame_tile 50
+    100120: frame_tile 51
+    100122: frame_tile 52
+    100124: frame_tile 53
+    100126: frame_tile 54
+    100128: frame_tile 55
+    100130: frame_tile 56
+    100132: frame_tile 57
+    100134: frame_tile 58
+    100136: frame_tile 59
+    100138: frame_tile 6
+    100140: frame_tile 60
+    100142: frame_tile 61
+    100144: frame_tile 62
+    100146: frame_tile 63
+    100148: frame_tile 64
+    100150: frame_tile 65
+    100152: frame_tile 66
+    100154: frame_tile 67
+    100156: frame_tile 68
+    100158: frame_tile 69
+    100160: frame_tile 7
+    100162: frame_tile 70
+    100164: frame_tile 71
+    100166: frame_tile 72
+    100168: frame_tile 73
+    100170: frame_tile 74
+    100172: frame_tile 75
+    100174: frame_tile 76
+    100176: frame_tile 77
+    100178: frame_tile 78
+    100180: frame_tile 79
+    100182: frame_tile 8
+    100184: frame_tile 80
+    100186: frame_tile 81
+    100188: frame_tile 82
+    100190: frame_tile 83
+    100192: frame_tile 9
+    100194: group_0
+    100196: group_1
+    100198: group_10
+    100200: group_10 1
+    100202: group_11
+    100204: group_2
+    100206: group_3
+    100208: group_4
+    100210: group_5
+    100212: group_6
+    100214: group_6 1
+    100216: group_6 2
+    100218: group_7
+    100220: group_7 1
+    100222: group_7 2
+    100224: group_8
+    100226: group_8 1
+    100228: group_9
+    100230: group_9 1
+    100232: hinge
+    100234: hinge 1
+    100236: hinge 2
+    100238: ID116
+    100240: ID126
+    100242: ID152
+    100244: ID162
+    100246: ID172
+    100248: ID216
+    100250: ID226
+    100252: ID252
+    100254: ID262
+    100256: ID272
+    100258: ID307
+    100260: ID317
+    100262: instance_0
+    100264: instance_1
+    100266: instance_10
+    100268: instance_11
+    100270: instance_12
+    100272: instance_13
+    100274: instance_14
+    100276: instance_15
+    100278: instance_15 1
+    100280: instance_16
+    100282: instance_16 1
+    100284: instance_17
+    100286: instance_17 1
+    100288: instance_18
+    100290: instance_18 1
+    100292: instance_19
+    100294: instance_19 1
+    100296: instance_2
+    100298: instance_20
+    100300: instance_20 1
+    100302: instance_21
+    100304: instance_21 1
+    100306: instance_22
+    100308: instance_22 1
+    100310: instance_23
+    100312: instance_23 1
+    100314: instance_24
+    100316: instance_24 1
+    100318: instance_25
+    100320: instance_25 1
+    100322: instance_26
+    100324: instance_26 1
+    100326: instance_27
+    100328: instance_27 1
+    100330: instance_28
+    100332: instance_28 1
+    100334: instance_29
+    100336: instance_29 1
+    100338: instance_3
+    100340: instance_30
+    100342: instance_30 1
+    100344: instance_31
+    100346: instance_31 1
+    100348: instance_32
+    100350: instance_32 1
+    100352: instance_33
+    100354: instance_33 1
+    100356: instance_34
+    100358: instance_34 1
+    100360: instance_35
+    100362: instance_35 1
+    100364: instance_36
+    100366: instance_36 1
+    100368: instance_37
+    100370: instance_37 1
+    100372: instance_38
+    100374: instance_38 1
+    100376: instance_39
+    100378: instance_39 1
+    100380: instance_4
+    100382: instance_40
+    100384: instance_40 1
+    100386: instance_41
+    100388: instance_41 1
+    100390: instance_42
+    100392: instance_42 1
+    100394: instance_43
+    100396: instance_43 1
+    100398: instance_44
+    100400: instance_44 1
+    100402: instance_45
+    100404: instance_45 1
+    100406: instance_46
+    100408: instance_46 1
+    100410: instance_47
+    100412: instance_47 1
+    100414: instance_48
+    100416: instance_48 1
+    100418: instance_49
+    100420: instance_49 1
+    100422: instance_5
+    100424: instance_50
+    100426: instance_50 1
+    100428: instance_51
+    100430: instance_51 1
+    100432: instance_52
+    100434: instance_52 1
+    100436: instance_53
+    100438: instance_53 1
+    100440: instance_54
+    100442: instance_54 1
+    100444: instance_55
+    100446: instance_55 1
+    100448: instance_56
+    100450: instance_56 1
+    100452: instance_57
+    100454: instance_6
+    100456: instance_7
+    100458: instance_8
+    100460: instance_9
+    100462: //RootNode
+    100464: skp_camera_Last_Saved_SketchUp_View
+    400000: door__good__square
+    400002: door__square
+    400004: door_frame__square
+    400006: door_frame__square 1
+    400008: door_knob
+    400010: door_knob 1
+    400012: door_strapping
+    400014: door_strapping 1
+    400016: door_strapping 2
+    400018: door_strapping 3
+    400020: door_strapping 4
+    400022: door_strapping 5
+    400024: doorway__square_1_
+    400026: frame_tile
+    400028: frame_tile 1
+    400030: frame_tile 10
+    400032: frame_tile 11
+    400034: frame_tile 12
+    400036: frame_tile 13
+    400038: frame_tile 14
+    400040: frame_tile 15
+    400042: frame_tile 16
+    400044: frame_tile 17
+    400046: frame_tile 18
+    400048: frame_tile 19
+    400050: frame_tile 2
+    400052: frame_tile 20
+    400054: frame_tile 21
+    400056: frame_tile 22
+    400058: frame_tile 23
+    400060: frame_tile 24
+    400062: frame_tile 25
+    400064: frame_tile 26
+    400066: frame_tile 27
+    400068: frame_tile 28
+    400070: frame_tile 29
+    400072: frame_tile 3
+    400074: frame_tile 30
+    400076: frame_tile 31
+    400078: frame_tile 32
+    400080: frame_tile 33
+    400082: frame_tile 34
+    400084: frame_tile 35
+    400086: frame_tile 36
+    400088: frame_tile 37
+    400090: frame_tile 38
+    400092: frame_tile 39
+    400094: frame_tile 4
+    400096: frame_tile 40
+    400098: frame_tile 41
+    400100: frame_tile 42
+    400102: frame_tile 43
+    400104: frame_tile 44
+    400106: frame_tile 45
+    400108: frame_tile 46
+    400110: frame_tile 47
+    400112: frame_tile 48
+    400114: frame_tile 49
+    400116: frame_tile 5
+    400118: frame_tile 50
+    400120: frame_tile 51
+    400122: frame_tile 52
+    400124: frame_tile 53
+    400126: frame_tile 54
+    400128: frame_tile 55
+    400130: frame_tile 56
+    400132: frame_tile 57
+    400134: frame_tile 58
+    400136: frame_tile 59
+    400138: frame_tile 6
+    400140: frame_tile 60
+    400142: frame_tile 61
+    400144: frame_tile 62
+    400146: frame_tile 63
+    400148: frame_tile 64
+    400150: frame_tile 65
+    400152: frame_tile 66
+    400154: frame_tile 67
+    400156: frame_tile 68
+    400158: frame_tile 69
+    400160: frame_tile 7
+    400162: frame_tile 70
+    400164: frame_tile 71
+    400166: frame_tile 72
+    400168: frame_tile 73
+    400170: frame_tile 74
+    400172: frame_tile 75
+    400174: frame_tile 76
+    400176: frame_tile 77
+    400178: frame_tile 78
+    400180: frame_tile 79
+    400182: frame_tile 8
+    400184: frame_tile 80
+    400186: frame_tile 81
+    400188: frame_tile 82
+    400190: frame_tile 83
+    400192: frame_tile 9
+    400194: group_0
+    400196: group_1
+    400198: group_10
+    400200: group_10 1
+    400202: group_11
+    400204: group_2
+    400206: group_3
+    400208: group_4
+    400210: group_5
+    400212: group_6
+    400214: group_6 1
+    400216: group_6 2
+    400218: group_7
+    400220: group_7 1
+    400222: group_7 2
+    400224: group_8
+    400226: group_8 1
+    400228: group_9
+    400230: group_9 1
+    400232: hinge
+    400234: hinge 1
+    400236: hinge 2
+    400238: ID116
+    400240: ID126
+    400242: ID152
+    400244: ID162
+    400246: ID172
+    400248: ID216
+    400250: ID226
+    400252: ID252
+    400254: ID262
+    400256: ID272
+    400258: ID307
+    400260: ID317
+    400262: instance_0
+    400264: instance_1
+    400266: instance_10
+    400268: instance_11
+    400270: instance_12
+    400272: instance_13
+    400274: instance_14
+    400276: instance_15
+    400278: instance_15 1
+    400280: instance_16
+    400282: instance_16 1
+    400284: instance_17
+    400286: instance_17 1
+    400288: instance_18
+    400290: instance_18 1
+    400292: instance_19
+    400294: instance_19 1
+    400296: instance_2
+    400298: instance_20
+    400300: instance_20 1
+    400302: instance_21
+    400304: instance_21 1
+    400306: instance_22
+    400308: instance_22 1
+    400310: instance_23
+    400312: instance_23 1
+    400314: instance_24
+    400316: instance_24 1
+    400318: instance_25
+    400320: instance_25 1
+    400322: instance_26
+    400324: instance_26 1
+    400326: instance_27
+    400328: instance_27 1
+    400330: instance_28
+    400332: instance_28 1
+    400334: instance_29
+    400336: instance_29 1
+    400338: instance_3
+    400340: instance_30
+    400342: instance_30 1
+    400344: instance_31
+    400346: instance_31 1
+    400348: instance_32
+    400350: instance_32 1
+    400352: instance_33
+    400354: instance_33 1
+    400356: instance_34
+    400358: instance_34 1
+    400360: instance_35
+    400362: instance_35 1
+    400364: instance_36
+    400366: instance_36 1
+    400368: instance_37
+    400370: instance_37 1
+    400372: instance_38
+    400374: instance_38 1
+    400376: instance_39
+    400378: instance_39 1
+    400380: instance_4
+    400382: instance_40
+    400384: instance_40 1
+    400386: instance_41
+    400388: instance_41 1
+    400390: instance_42
+    400392: instance_42 1
+    400394: instance_43
+    400396: instance_43 1
+    400398: instance_44
+    400400: instance_44 1
+    400402: instance_45
+    400404: instance_45 1
+    400406: instance_46
+    400408: instance_46 1
+    400410: instance_47
+    400412: instance_47 1
+    400414: instance_48
+    400416: instance_48 1
+    400418: instance_49
+    400420: instance_49 1
+    400422: instance_5
+    400424: instance_50
+    400426: instance_50 1
+    400428: instance_51
+    400430: instance_51 1
+    400432: instance_52
+    400434: instance_52 1
+    400436: instance_53
+    400438: instance_53 1
+    400440: instance_54
+    400442: instance_54 1
+    400444: instance_55
+    400446: instance_55 1
+    400448: instance_56
+    400450: instance_56 1
+    400452: instance_57
+    400454: instance_6
+    400456: instance_7
+    400458: instance_8
+    400460: instance_9
+    400462: //RootNode
+    400464: skp_camera_Last_Saved_SketchUp_View
+    2300000: door__square
+    2300002: door_strapping
+    2300004: door_strapping 1
+    2300006: door_strapping 2
+    2300008: door_strapping 3
+    2300010: door_strapping 4
+    2300012: door_strapping 5
+    2300014: frame_tile
+    2300016: frame_tile 1
+    2300018: frame_tile 10
+    2300020: frame_tile 11
+    2300022: frame_tile 12
+    2300024: frame_tile 13
+    2300026: frame_tile 14
+    2300028: frame_tile 15
+    2300030: frame_tile 16
+    2300032: frame_tile 17
+    2300034: frame_tile 18
+    2300036: frame_tile 19
+    2300038: frame_tile 2
+    2300040: frame_tile 20
+    2300042: frame_tile 21
+    2300044: frame_tile 22
+    2300046: frame_tile 23
+    2300048: frame_tile 24
+    2300050: frame_tile 25
+    2300052: frame_tile 26
+    2300054: frame_tile 27
+    2300056: frame_tile 28
+    2300058: frame_tile 29
+    2300060: frame_tile 3
+    2300062: frame_tile 30
+    2300064: frame_tile 31
+    2300066: frame_tile 32
+    2300068: frame_tile 33
+    2300070: frame_tile 34
+    2300072: frame_tile 35
+    2300074: frame_tile 36
+    2300076: frame_tile 37
+    2300078: frame_tile 38
+    2300080: frame_tile 39
+    2300082: frame_tile 4
+    2300084: frame_tile 40
+    2300086: frame_tile 41
+    2300088: frame_tile 42
+    2300090: frame_tile 43
+    2300092: frame_tile 44
+    2300094: frame_tile 45
+    2300096: frame_tile 46
+    2300098: frame_tile 47
+    2300100: frame_tile 48
+    2300102: frame_tile 49
+    2300104: frame_tile 5
+    2300106: frame_tile 50
+    2300108: frame_tile 51
+    2300110: frame_tile 52
+    2300112: frame_tile 53
+    2300114: frame_tile 54
+    2300116: frame_tile 55
+    2300118: frame_tile 56
+    2300120: frame_tile 57
+    2300122: frame_tile 58
+    2300124: frame_tile 59
+    2300126: frame_tile 6
+    2300128: frame_tile 60
+    2300130: frame_tile 61
+    2300132: frame_tile 62
+    2300134: frame_tile 63
+    2300136: frame_tile 64
+    2300138: frame_tile 65
+    2300140: frame_tile 66
+    2300142: frame_tile 67
+    2300144: frame_tile 68
+    2300146: frame_tile 69
+    2300148: frame_tile 7
+    2300150: frame_tile 70
+    2300152: frame_tile 71
+    2300154: frame_tile 72
+    2300156: frame_tile 73
+    2300158: frame_tile 74
+    2300160: frame_tile 75
+    2300162: frame_tile 76
+    2300164: frame_tile 77
+    2300166: frame_tile 78
+    2300168: frame_tile 79
+    2300170: frame_tile 8
+    2300172: frame_tile 80
+    2300174: frame_tile 81
+    2300176: frame_tile 82
+    2300178: frame_tile 83
+    2300180: frame_tile 9
+    2300182: group_1
+    2300184: group_10
+    2300186: group_10 1
+    2300188: group_11
+    2300190: group_2
+    2300192: group_4
+    2300194: group_5
+    2300196: group_6
+    2300198: group_6 1
+    2300200: group_6 2
+    2300202: group_7
+    2300204: group_7 1
+    2300206: group_7 2
+    2300208: group_8
+    2300210: group_8 1
+    2300212: group_9
+    2300214: group_9 1
+    2300216: ID116
+    2300218: ID152
+    2300220: ID162
+    2300222: ID172
+    2300224: ID216
+    2300226: ID252
+    2300228: ID262
+    2300230: ID272
+    2300232: ID307
+    2300234: ID317
+    3300000: door__square
+    3300002: door_strapping
+    3300004: door_strapping 1
+    3300006: door_strapping 2
+    3300008: door_strapping 3
+    3300010: door_strapping 4
+    3300012: door_strapping 5
+    3300014: frame_tile
+    3300016: frame_tile 1
+    3300018: frame_tile 10
+    3300020: frame_tile 11
+    3300022: frame_tile 12
+    3300024: frame_tile 13
+    3300026: frame_tile 14
+    3300028: frame_tile 15
+    3300030: frame_tile 16
+    3300032: frame_tile 17
+    3300034: frame_tile 18
+    3300036: frame_tile 19
+    3300038: frame_tile 2
+    3300040: frame_tile 20
+    3300042: frame_tile 21
+    3300044: frame_tile 22
+    3300046: frame_tile 23
+    3300048: frame_tile 24
+    3300050: frame_tile 25
+    3300052: frame_tile 26
+    3300054: frame_tile 27
+    3300056: frame_tile 28
+    3300058: frame_tile 29
+    3300060: frame_tile 3
+    3300062: frame_tile 30
+    3300064: frame_tile 31
+    3300066: frame_tile 32
+    3300068: frame_tile 33
+    3300070: frame_tile 34
+    3300072: frame_tile 35
+    3300074: frame_tile 36
+    3300076: frame_tile 37
+    3300078: frame_tile 38
+    3300080: frame_tile 39
+    3300082: frame_tile 4
+    3300084: frame_tile 40
+    3300086: frame_tile 41
+    3300088: frame_tile 42
+    3300090: frame_tile 43
+    3300092: frame_tile 44
+    3300094: frame_tile 45
+    3300096: frame_tile 46
+    3300098: frame_tile 47
+    3300100: frame_tile 48
+    3300102: frame_tile 49
+    3300104: frame_tile 5
+    3300106: frame_tile 50
+    3300108: frame_tile 51
+    3300110: frame_tile 52
+    3300112: frame_tile 53
+    3300114: frame_tile 54
+    3300116: frame_tile 55
+    3300118: frame_tile 56
+    3300120: frame_tile 57
+    3300122: frame_tile 58
+    3300124: frame_tile 59
+    3300126: frame_tile 6
+    3300128: frame_tile 60
+    3300130: frame_tile 61
+    3300132: frame_tile 62
+    3300134: frame_tile 63
+    3300136: frame_tile 64
+    3300138: frame_tile 65
+    3300140: frame_tile 66
+    3300142: frame_tile 67
+    3300144: frame_tile 68
+    3300146: frame_tile 69
+    3300148: frame_tile 7
+    3300150: frame_tile 70
+    3300152: frame_tile 71
+    3300154: frame_tile 72
+    3300156: frame_tile 73
+    3300158: frame_tile 74
+    3300160: frame_tile 75
+    3300162: frame_tile 76
+    3300164: frame_tile 77
+    3300166: frame_tile 78
+    3300168: frame_tile 79
+    3300170: frame_tile 8
+    3300172: frame_tile 80
+    3300174: frame_tile 81
+    3300176: frame_tile 82
+    3300178: frame_tile 83
+    3300180: frame_tile 9
+    3300182: group_1
+    3300184: group_10
+    3300186: group_10 1
+    3300188: group_11
+    3300190: group_2
+    3300192: group_4
+    3300194: group_5
+    3300196: group_6
+    3300198: group_6 1
+    3300200: group_6 2
+    3300202: group_7
+    3300204: group_7 1
+    3300206: group_7 2
+    3300208: group_8
+    3300210: group_8 1
+    3300212: group_9
+    3300214: group_9 1
+    3300216: ID116
+    3300218: ID152
+    3300220: ID162
+    3300222: ID172
+    3300224: ID216
+    3300226: ID252
+    3300228: ID262
+    3300230: ID272
+    3300232: ID307
+    3300234: ID317
+    4300000: group_1
+    4300002: group_2
+    4300004: group_4
+    4300006: group_5
+    4300008: door_strapping
+    4300010: group_6
+    4300012: group_7
+    4300014: group_8
+    4300016: ID116
+    4300018: group_9
+    4300020: group_10
+    4300022: ID152
+    4300024: ID162
+    4300026: ID172
+    4300028: door__square
+    4300030: group_8
+    4300032: ID216
+    4300034: group_9
+    4300036: group_10
+    4300038: ID252
+    4300040: ID262
+    4300042: ID272
+    4300044: group_11
+    4300046: ID307
+    4300048: ID317
+    4300050: frame_tile
+    4300052: frame_tile
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3651b73ab0e37e44b90a054c4dbb0db
+guid: 20f46c0e5c3c3244db416832342bc2e0
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -85,7 +85,9 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
+      does not match position in animation file:\n\t'BN_LeftHandMiddle2' : position
+      error = 3.567062 mm\n"
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
