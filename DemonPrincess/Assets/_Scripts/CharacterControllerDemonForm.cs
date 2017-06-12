@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterControllerDemonForm : MonoBehaviour {
 
     Animator anim;
+    public GameObject wings;
 
     public bool demonForm;
 
@@ -28,13 +29,13 @@ public class CharacterControllerDemonForm : MonoBehaviour {
         {
             anim.SetBool("Demon", true);
             demonForm = true;
-            Debug.Log("Demon Form");
+            wings.SetActive(true);
         }
         else
         {
             anim.SetBool("Demon", false);
             demonForm = false;
-            Debug.Log("Princess Form");
+            wings.SetActive(false);
         }
     }
 }
