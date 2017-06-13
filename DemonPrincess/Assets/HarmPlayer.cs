@@ -3,5 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HarmPlayer : MonoBehaviour {
+    public int damageDealt = 0;
 
+    void OnTriggerEnter(Collision other)
+    {
+        if (other.gameObject.tag== "Controller")
+        {
+            Debug.Log("Player loses " + damageDealt);
+        }
+    }
 }
