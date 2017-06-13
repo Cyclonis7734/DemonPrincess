@@ -31,14 +31,14 @@ public class MovingPlatformUpDown : MonoBehaviour
                 Debug.Log("Direction changed to 1");
             }
         }
-        if (other.tag == "Player")
+        if (other.tag == "Controller")
         {
             other.transform.parent = transform;
         }
     }
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Constroller")
         {
             other.transform.parent = null;
         }
