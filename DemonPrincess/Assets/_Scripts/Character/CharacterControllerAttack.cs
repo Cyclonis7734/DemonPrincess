@@ -38,6 +38,7 @@ public class CharacterControllerAttack : MonoBehaviour {
 
     public void Kamehameha()
     {
-        Instantiate(demonBall, instantiatePosition.transform.position, Quaternion.identity);
+        GameObject dBallInst = Instantiate(demonBall, instantiatePosition.transform.position, Quaternion.identity);
+        dBallInst.GetComponent<DemonBallScript>().instPos = gameObject;
     }
 }
