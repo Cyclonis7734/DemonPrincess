@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\HarmPlayer.cs" />
      <Compile Include="Assets\Unity Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
      <Compile Include="Assets\Unity Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
      <Compile Include="Assets\Unity Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
@@ -96,6 +97,8 @@
      <Compile Include="Assets\_Scripts\Enemy AI\EnemyS_Idle.cs" />
      <Compile Include="Assets\_Scripts\Enemy AI\EnemyS_Pursuing.cs" />
      <Compile Include="Assets\_Scripts\Enemy AI\EnemyS_Wandering.cs" />
+     <Compile Include="Assets\_Scripts\LoadLevel.cs" />
+     <Compile Include="Assets\_Scripts\MainMenu.cs" />
      <Compile Include="Assets\_Scripts\MovingPlatform.cs" />
      <Compile Include="Assets\_Scripts\MovingPlatformUpDown.cs" />
      <Compile Include="Assets\_Scripts\UI\LoadMenuManager.cs" />
@@ -103,6 +106,7 @@
      <Compile Include="Assets\_Scripts\UI\SceneLoader.cs" />
      <None Include="Assets\Random Downloaded Assets\Cave Imports\Documentation\Support.txt" />
      <None Include="Assets\Unity Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Random Downloaded Assets\trap3\badfluid@gmail.com.txt" />
      <None Include="Assets\Unity Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

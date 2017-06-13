@@ -49,6 +49,7 @@
      <Compile Include="Assets\Unity Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
      <None Include="Assets\Random Downloaded Assets\Cave Imports\Documentation\Support.txt" />
      <None Include="Assets\Unity Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Random Downloaded Assets\trap3\badfluid@gmail.com.txt" />
      <None Include="Assets\Unity Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
