@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour
     protected float floDetectionDistance { get; set; }
     protected float floHealthMax;
     protected float floHealth;
+    protected float floPreviousAngle = 0f;
 
     //Declare SM Objects
     EnemySMInterface IsWandering;
@@ -49,7 +50,7 @@ public class Enemy : MonoBehaviour
         //Setup Nav Mesh Agent object using getComponent Method
         foreach (GameObject gamo in FindObjectsOfType<GameObject>())
         {
-            if (gamo.name.Equals("ThirdPersonController"))
+            if (gamo.name.Equals("Princess"))
             { gamoPlayer = gamo; }
         }
 
@@ -66,18 +67,9 @@ public class Enemy : MonoBehaviour
 
     }//End Awake Method
 
-    private void Update()
-    {
-        //Debug.Log(nav.velocity);
-        if (nav.velocity.x > .15 || nav.velocity.z > .15)
-        {
-            anim.SetFloat("Forward", (float)((nav.velocity.x + nav.velocity.z) / 2));
-        }
-        else
-        {
-            anim.SetFloat("Forward", 0f);
-        }
-    }
+    //private void Update()
+    //{
+    //}
 
     //------------------------------------------------------------------------------
 
@@ -102,6 +94,34 @@ public class Enemy : MonoBehaviour
                 StartWandering();
             }
         }
+
+
+
+        //float angleOfVelocity = Mathf.Atan2(nav.velocity.z, nav.velocity.x) * Mathf.Rad2Deg;
+        float angleOfCharacterForward = Mathf.Atan2(transform.forward.z, transform.forward.x) * Mathf.Rad2Deg;
+        //float angleBetween = angleOfVelocity - angleOfCharacterForward;
+        //Debug.Log("Angle character should rotate is " + angleBetween);
+        //float amountToTurn = angleBetween / 30;
+        //amountToTurn = Mathf.Clamp(amountToTurn, -1f, 1);
+        float angleDiff = (angleOfCharacterForward - floPreviousAngle) / Time.fixedDeltaTime;
+        anim.SetFloat("Turn", angleDiff);
+        Debug.Log(angleDiff.ToString());
+
+        floPreviousAngle = angleOfCharacterForward;
+
+        //Debug.Log(nav.velocity);
+        //if (nav.velocity.magnitude > .15)
+        //{
+        anim.SetFloat("Forward", (float)((nav.velocity.x + nav.velocity.z) / 2));
+
+        //}
+        //else
+        //{
+        //    anim.SetFloat("Forward", 0f);
+        //}
+
+
+
     }
 
 

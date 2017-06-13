@@ -5,7 +5,7 @@ using UnityEngine;
 public class DemonBallScript : MonoBehaviour {
 
     Rigidbody demonBall;
-    public GameObject character;
+    public GameObject instPos;
 
     float lifeTime;
     float speed;
@@ -27,8 +27,8 @@ public class DemonBallScript : MonoBehaviour {
 
     public void Movement()
     {
-        Vector3 forward = character.transform.InverseTransformDirection(Vector3.forward);
-        demonBall.AddRelativeForce(forward * speed * Time.deltaTime, ForceMode.VelocityChange);
+        Debug.Log(instPos.GetComponent<Transform>().forward);
+        demonBall.AddForce(instPos.GetComponent<Transform>().forward * speed * Time.deltaTime, ForceMode.VelocityChange);
     }
     
     

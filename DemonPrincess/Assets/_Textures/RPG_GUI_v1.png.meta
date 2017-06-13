@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 064dd8dc6b7437b47820da1141e245da
-timeCreated: 1497254164
+timeCreated: 1497312274
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -60,13 +60,13 @@ TextureImporter:
     21300106: RPG_GUI_v1_53
     21300108: RPG_GUI_v1_54
     21300110: RPG_GUI_v1_55
-    21300112: RPG_GUI_v1_56
-    21300114: RPG_GUI_v1_57
-    21300116: RPG_GUI_v1_58
+    21300112: RPG_GUI_v1_BorderCornerLeftTop
+    21300114: RPG_GUI_v1_BorderTop
+    21300116: RPG_GUI_v1_BorderCornerRightTop
     21300118: RPG_GUI_v1_59
-    21300120: RPG_GUI_v1_60
-    21300122: RPG_GUI_v1_61
-    21300124: RPG_GUI_v1_62
+    21300120: RPG_GUI_v1_BorderLeft
+    21300122: RPG_GUI_v1_BorderFourWay
+    21300124: RPG_GUI_v1_BorderRight
     21300126: RPG_GUI_v1_63
     21300128: RPG_GUI_v1_64
     21300130: RPG_GUI_v1_65
@@ -78,9 +78,9 @@ TextureImporter:
     21300142: RPG_GUI_v1_71
     21300144: RPG_GUI_v1_72
     21300146: RPG_GUI_v1_73
-    21300148: RPG_GUI_v1_74
-    21300150: RPG_GUI_v1_75
-    21300152: RPG_GUI_v1_76
+    21300148: RPG_GUI_v1_BorderCornerLeftBottom
+    21300150: RPG_GUI_v1_BorderBottom
+    21300152: RPG_GUI_v1_BorderCornerRightBottom
     21300154: RPG_GUI_v1_77
     21300156: RPG_GUI_v1_78
     21300158: RPG_GUI_v1_79
@@ -93,7 +93,7 @@ TextureImporter:
     21300172: RPG_GUI_v1_86
     21300174: RPG_GUI_v1_87
     21300176: RPG_GUI_v1_88
-    21300178: RPG_GUI_v1_89
+    21300178: RPG_GUI_v1_Background
     21300180: RPG_GUI_v1_90
     21300182: RPG_GUI_v1_91
     21300184: RPG_GUI_v1_92
@@ -132,7 +132,7 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 1
     aniso: -1
     mipBias: -1
     wrapMode: 1
@@ -158,7 +158,7 @@ TextureImporter:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -166,7 +166,7 @@ TextureImporter:
   - buildTarget: Standalone
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -174,7 +174,7 @@ TextureImporter:
   - buildTarget: WebGL
     maxTextureSize: 2048
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -911,7 +911,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_56
+      name: RPG_GUI_v1_BorderCornerLeftTop
       rect:
         serializedVersion: 2
         x: 855
@@ -924,7 +924,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_57
+      name: RPG_GUI_v1_BorderTop
       rect:
         serializedVersion: 2
         x: 893
@@ -937,7 +937,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_58
+      name: RPG_GUI_v1_BorderCornerRightTop
       rect:
         serializedVersion: 2
         x: 978
@@ -963,11 +963,11 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_60
+      name: RPG_GUI_v1_BorderLeft
       rect:
         serializedVersion: 2
         x: 855
-        y: 384
+        y: 383
         width: 19
         height: 55
       alignment: 0
@@ -976,7 +976,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_61
+      name: RPG_GUI_v1_BorderFourWay
       rect:
         serializedVersion: 2
         x: 914
@@ -989,7 +989,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_62
+      name: RPG_GUI_v1_BorderRight
       rect:
         serializedVersion: 2
         x: 984
@@ -1145,7 +1145,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_74
+      name: RPG_GUI_v1_BorderCornerLeftBottom
       rect:
         serializedVersion: 2
         x: 855
@@ -1158,7 +1158,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_75
+      name: RPG_GUI_v1_BorderBottom
       rect:
         serializedVersion: 2
         x: 893
@@ -1171,7 +1171,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_76
+      name: RPG_GUI_v1_BorderCornerRightBottom
       rect:
         serializedVersion: 2
         x: 978
@@ -1340,7 +1340,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: RPG_GUI_v1_89
+      name: RPG_GUI_v1_Background
       rect:
         serializedVersion: 2
         x: 112
