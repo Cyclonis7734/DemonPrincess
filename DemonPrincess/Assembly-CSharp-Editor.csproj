@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Unity Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+     <Compile Include="Assets\_Downloads\AllStarCharacterLibrary\Scripts\Editor\TurnOffRenderers.cs" />
      <None Include="Assets\Random Downloaded Assets\Cave Imports\Documentation\Support.txt" />
      <None Include="Assets\Unity Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Random Downloaded Assets\trap3\badfluid@gmail.com.txt" />

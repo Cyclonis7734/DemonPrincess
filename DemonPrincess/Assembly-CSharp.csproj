@@ -85,6 +85,12 @@
      <Compile Include="Assets\Unity Assets\Utility\TimedObjectDestructor.cs" />
      <Compile Include="Assets\Unity Assets\Utility\WaypointCircuit.cs" />
      <Compile Include="Assets\Unity Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\_Downloads\AllStarCharacterLibrary\Scripts\CamTarget.cs" />
+     <Compile Include="Assets\_Downloads\AllStarCharacterLibrary\Scripts\CharacterDemoController.cs" />
+     <Compile Include="Assets\_Downloads\AllStarCharacterLibrary\Scripts\MouseOrbit.cs" />
+     <Compile Include="Assets\_Downloads\AllStarCharacterLibrary\Scripts\Outfitter.cs" />
+     <Compile Include="Assets\_Downloads\AllStarCharacterLibrary\Scripts\RootMotionOff.cs" />
+     <Compile Include="Assets\_Downloads\AllStarCharacterLibrary\Scripts\SkinnedMeshCombiner.cs" />
      <Compile Include="Assets\_Scripts\Character\CameraControllerMovement.cs" />
      <Compile Include="Assets\_Scripts\Character\CharacterControllerAttack.cs" />
      <Compile Include="Assets\_Scripts\Character\CharacterControllerDemonForm.cs" />
