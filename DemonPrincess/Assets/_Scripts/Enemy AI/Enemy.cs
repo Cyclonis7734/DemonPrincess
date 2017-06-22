@@ -12,10 +12,13 @@ public class Enemy : MonoBehaviour
     public NavMeshAgent nav;
     public Animator anim;
     public Rigidbody rbody;
+    public AnimationClip animAttack;
     protected float floDetectionDistance { get; set; }
     protected float floHealthMax;
     protected float floHealth;
     protected float floPreviousAngle = 0f;
+    protected float previousAngularVelocity;
+    protected float previousVelocity;
 
     //Declare SM Objects
     EnemySMInterface IsWandering;
@@ -103,16 +106,19 @@ public class Enemy : MonoBehaviour
         //Debug.Log("Angle character should rotate is " + angleBetween);
         //float amountToTurn = angleBetween / 30;
         //amountToTurn = Mathf.Clamp(amountToTurn, -1f, 1);
-        float angleDiff = (angleOfCharacterForward - floPreviousAngle) / Time.fixedDeltaTime;
-        anim.SetFloat("Turn", angleDiff);
-        Debug.Log(angleDiff.ToString());
+        float angularVelocity = (angleOfCharacterForward - floPreviousAngle) / Time.fixedDeltaTime;
+        //normalize
+        angularVelocity /= 180f;
+        angularVelocity = (previousAngularVelocity * 3 + angularVelocity) / 4f;
+        anim.SetFloat("Turn", angularVelocity);
+        Debug.Log(angularVelocity.ToString());
 
         floPreviousAngle = angleOfCharacterForward;
 
         //Debug.Log(nav.velocity);
         //if (nav.velocity.magnitude > .15)
         //{
-        anim.SetFloat("Forward", (float)((nav.velocity.x + nav.velocity.z) / 2));
+        anim.SetFloat("Forward", nav.velocity.magnitude / 4f);
 
         //}
         //else
@@ -174,7 +180,9 @@ public class Enemy : MonoBehaviour
 
     public virtual IEnumerator IHandleAttack()
     {
-        yield return new WaitForSeconds(1f);
+        anim.SetTrigger("Attack");
+        yield return new WaitForSeconds(animAttack.length);
+        //anim.SetBool("Attack", false);
     }
 
     //------------------------------------------------------------------------------
