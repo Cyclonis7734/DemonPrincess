@@ -29,9 +29,9 @@ public class CharacterControllerAttack : MonoBehaviour {
     {
         charAnim.SetBool("Attack", true);
         isAttacking = true;
-        yield return new WaitForSeconds(attackAnim.length / 2);
+        yield return new WaitForSeconds(attackAnim.length/4f);
         Kamehameha();
-        yield return new WaitForSeconds(attackAnim.length / 2);
+        yield return new WaitForSeconds(attackAnim.length / 5f);
         charAnim.SetBool("Attack", false);
         isAttacking = false;
     }

@@ -6,7 +6,7 @@ public class EnemyStatsHandler : StatsHandler {
 
     protected override void Start()
     {
-        floMaxHealth = 45f;
+        floMaxHealth = 20f;
         floCurrentHealth = floMaxHealth;
     }
 

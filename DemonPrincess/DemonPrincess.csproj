@@ -134,6 +134,9 @@
     <Compile Include="Assets\_Scripts\Character\CharacterControllerDemonForm.cs" />
     <Compile Include="Assets\_Scripts\Character\DemonBallScript.cs" />
     <Compile Include="Assets\_Scripts\CharacterControllerMovement.cs" />
+    <Compile Include="Assets\_Scripts\DeathLoad.cs" />
+    <Compile Include="Assets\_Scripts\DeathLoad1.cs" />
+    <Compile Include="Assets\_Scripts\DeathLoad2.cs" />
     <Compile Include="Assets\_Scripts\Enemy AI\Enemy.cs" />
     <Compile Include="Assets\_Scripts\Enemy AI\EnemySMInterface.cs" />
     <Compile Include="Assets\_Scripts\Enemy AI\EnemyS_Attacking.cs" />

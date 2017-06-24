@@ -14,7 +14,7 @@ public class DemonBallScript : MonoBehaviour {
     {
         demonBall = GetComponent<Rigidbody>();
         lifeTime = 3f;
-        speed = 200f;
+        speed = 400f;
         Movement();
         StartCoroutine(DemonBallTimer());
     }
