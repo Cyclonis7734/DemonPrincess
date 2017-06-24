@@ -14,8 +14,6 @@ public class Enemy : MonoBehaviour
     public Rigidbody rbody;
     public AnimationClip animAttack;
     protected float floDetectionDistance { get; set; }
-    protected float floHealthMax;
-    protected float floHealth;
     protected float floPreviousAngle = 0f;
     protected float previousAngularVelocity;
     protected float previousVelocity;
@@ -47,8 +45,6 @@ public class Enemy : MonoBehaviour
     //------------------------------------------------------------------------------
     protected virtual void Awake()
     {
-        floHealthMax = Random.Range(10f, 20f);
-        floHealth = floHealthMax;
         //Find and Set Player object via a foreach loop
         //Setup Nav Mesh Agent object using getComponent Method
         foreach (GameObject gamo in FindObjectsOfType<GameObject>())
@@ -111,7 +107,7 @@ public class Enemy : MonoBehaviour
         angularVelocity /= 180f;
         angularVelocity = (previousAngularVelocity * 3 + angularVelocity) / 4f;
         anim.SetFloat("Turn", angularVelocity);
-        Debug.Log(angularVelocity.ToString());
+        //Debug.Log(angularVelocity.ToString());
 
         floPreviousAngle = angleOfCharacterForward;
 
@@ -130,22 +126,12 @@ public class Enemy : MonoBehaviour
 
     }
 
-
-    //------------------------------------------------------------------------------
-
-    public virtual void EnemyChangesHealth(float floAmount)
-    {
-        floHealth += floAmount;
-        //if (floAmount < 0) { asTakesHit.Play(); }
-        if (floHealth <= 0) { floHealth = 0; StartDeathSet(); }
-        else if (floHealth >= floHealthMax) { floHealth = floHealthMax; }
-    }
-
+   
     //------------------------------------------------------------------------------
 
     protected virtual void PlayerSpotted(float floCurDist)
     {
-        if (floCurDist <= 3) { StartAttacking(); } else { StartPursuit(); }
+        if (floCurDist <= 2) { StartAttacking(); } else { StartPursuit(); }
     }
 
     //************************ BEGIN SM SET/GET METHODS ****************************
@@ -183,6 +169,7 @@ public class Enemy : MonoBehaviour
         anim.SetTrigger("Attack");
         yield return new WaitForSeconds(animAttack.length);
         //anim.SetBool("Attack", false);
+        StartIdle();
     }
 
     //------------------------------------------------------------------------------

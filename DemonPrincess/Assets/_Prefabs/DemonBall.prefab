@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 96104353994486732}
   - component: {fileID: 114640796291910634}
   - component: {fileID: 54811090628622936}
+  - component: {fileID: 114208072164521724}
   m_Layer: 0
   m_Name: DemonBall
   m_TagString: Untagged
@@ -190,6 +191,17 @@ TrailRenderer:
     textureMode: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!114 &114208072164521724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931526840458682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085144c04cd006d46b3ae07e7e8fd43f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114640796291910634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc78d24ae506e7c4db53ebf2317e126d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instPos: {fileID: 1160967292126234, guid: faf731f9b9c256d4e991c1a0829d44ba, type: 2}
+  instPos: {fileID: 0}
 --- !u!135 &135664865982466302
 SphereCollider:
   m_ObjectHideFlags: 1
